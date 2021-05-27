@@ -4,6 +4,10 @@ from threading import Thread
 from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
+
+translator = Translator()
 
 
 @app.route('/')
@@ -38,8 +42,6 @@ def langs():
     else:
         return 'hi there'
 
-
-translator = Translator()
 
 if __name__ == '__main__':
     app.run(debug=True)
