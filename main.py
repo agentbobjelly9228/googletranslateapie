@@ -1,6 +1,6 @@
 
 from flask import Flask, jsonify, request
-thing = ''
+things = ''
 try: 
   from flask_cors import CORS
   from googletrans import Translator, LANGUAGES
