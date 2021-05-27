@@ -1,6 +1,5 @@
 from googletrans import Translator, LANGUAGES
 from flask import Flask, jsonify, request
-from threading import Thread
 from flask_cors import CORS
 
 app = Flask(__name__)
