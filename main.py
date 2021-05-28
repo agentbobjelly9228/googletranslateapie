@@ -7,7 +7,7 @@ from flask_cors import CORS
 #   things = e
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 
 # translator = Translator()
@@ -15,7 +15,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return 'things'
+  return 'things'
 
 
 # @app.route('/translate', methods=['POST', 'GET'])
