@@ -1,22 +1,21 @@
 
 from flask import Flask, jsonify, request
-things = ''
-try: 
-  from flask_cors import CORS
-  from googletrans import Translator, LANGUAGES
-except Exception as e:
-  things = e
+# try: 
+from flask_cors import CORS
+#   from googletrans import Translator, LANGUAGES
+# except Exception as e:
+#   things = e
 
 app = Flask(__name__)
 CORS(app)
 
 
-translator = Translator()
+# translator = Translator()
 
 
 @app.route('/')
 def index():
-    return things
+    return 'things'
 
 
 # @app.route('/translate', methods=['POST', 'GET'])
