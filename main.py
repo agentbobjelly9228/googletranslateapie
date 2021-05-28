@@ -1,7 +1,7 @@
 
 from flask import Flask, jsonify, request
 # try: 
-from flask_cors import CORS
+# from flask_cors import CORS
 #   from googletrans import Translator, LANGUAGES
 # except Exception as e:
 #   things = e
