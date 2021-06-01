@@ -28,7 +28,7 @@ def home():
 
 @app.route('/en', methods=['POST', 'GET'])
 def langs():
-  if request.method != 'POST':
+  if request.method == 'GET':
     langg = LANGUAGES
     langs = []
     codes = []
@@ -49,7 +49,7 @@ def langs():
 
 @app.route('/chin', methods=['POST', 'GET'])
 def chin():
-  if request.method != 'POST':
+  if request.method == 'GET':
     langg = LANGUAGES
     langs = []
     codes = []
