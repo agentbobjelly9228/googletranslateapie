@@ -17,7 +17,7 @@ def index():
 
 @app.route('/translate', methods=['POST', 'GET'])
 def home():
-  if request.method == 'POST':
+  if request.method == 'GET':
     words = request.args['words']
     lang = request.args['lang']
     print(translator.translate(words, dest=lang).text)
