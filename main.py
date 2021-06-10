@@ -27,7 +27,7 @@ def home():
         except Exception as e:
             return e
             lang = 'en'
-        return jsonify({'response': translator.translate(words, dest=lang).text})
+        return "jsonify({'response': translator.translate(words, dest=lang).text})"
     else:
         return 'hello world'
 
