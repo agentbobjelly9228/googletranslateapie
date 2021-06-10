@@ -20,7 +20,7 @@ def index():
 @app.route('/translate', methods=['POST', 'GET'])
 def home():
     if request.method == 'POST':
-        return 'hi'
+        return str(request)
         try:
             words = request.get_json['words']
             lang = request.get_json['lang']
