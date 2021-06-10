@@ -20,9 +20,9 @@ def index():
 @app.route('/translate', methods=['POST', 'GET'])
 def home():
     if request.method == 'POST':
-        words = request.args['words']
+        words = request.json['words']
         try:
-            lang = request.args['lang']
+            lang = request.json['lang']
         except Exception as e:
             print('stuff' + str(e))
             lang = 'en'
